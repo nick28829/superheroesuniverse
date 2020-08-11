@@ -1,2 +1,2 @@
 # superheroesuniverse
-Funny game, beginning with just commandline inputs an evolving to a gui
+Funny game, beginning with just commandline inputs and evolving to a gui
