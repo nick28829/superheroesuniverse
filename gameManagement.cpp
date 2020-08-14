@@ -10,7 +10,7 @@ Game::Game(){
 }
 
 LevelState::LevelState(){
-    bool level1 = 0;
+    bool level1 = false;
 }
 
 // functions outside the classes
@@ -36,9 +36,16 @@ void Game::endGame(){
     exit(0);
 }
 
-// this mehtod manages most of the game
+// in this method the game is running
 int Game::play(){
     int currentLevel = this->getSavingPoint();
-    startLevel(&currentLevel, this->*completedLevels);
+    while (true){
+        currentLevel = startLevel(currentLevel, this->*completedLevels); // -1 is the flag for ending the game
+        if (currentLevel == -1){ 
+            break;
+        }
+    }
+    this->endGame();
+    
 }
 

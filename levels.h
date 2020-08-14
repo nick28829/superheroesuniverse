@@ -1,4 +1,6 @@
 #ifndef LEVELS_H
 #define LEVELS_H
 
-void startLevel(int *currentLevel, LevelState* completedLevels);
+int startLevel(int currentLevel, LevelState* completedLevels);
+
+#endif
