@@ -14,6 +14,11 @@ char answer(){
     if (in == 'q') {
         extern Game currentGame;
         currentGame.endGame();
+    } else if (in=='s') {
+        extern Game currentGame;
+        currentGame.saveGame();
+        basicOut("Game saved successfully.");
+        return answer();
     }
     return in;
 }
