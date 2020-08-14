@@ -3,7 +3,7 @@
 
 int main(){
 	while (true){
-		std::cout << "Möchtest Du einen Spielstand laden oder einen neuen Spielstand erstellen? (l/n)"
+		std::cout << "Do you want to load an existing game or create a new one? (l/n)"
 		<< std::endl;
 		char userInput;
 		std::cin >> userInput;
