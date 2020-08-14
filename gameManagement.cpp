@@ -4,7 +4,12 @@
 void Game::saveGame(){}
 
 Game getGame(int gameNumber){
-    r
+    
+}
+
+int Game::play(){
+
+    
 }
 
 void showGames(){}

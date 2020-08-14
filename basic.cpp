@@ -5,11 +5,15 @@
 #include "gameManagement.h"
 #include "inout.h"
 
-int utils::newGame(){}
+int utils::newGame(){
+    Game currentGame {};
+    return currentGame.play();
+}
 int utils::loadGame(){
     basicOut("Choose your Game to proceed: ");
     showGames();
     Game currentGame = getGame(intInput());
+    return currentGame.play();
 }
 
 
