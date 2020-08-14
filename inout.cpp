@@ -2,6 +2,7 @@
 #include <string>
 #include "inout.h"
 #include "charakters.h"
+#include "gameManagement.h"
 
 void charOutput(Charakter *person, std::string message){
     std::cout << person->getName() <<": "<< message << std::endl;
@@ -10,6 +11,10 @@ void charOutput(Charakter *person, std::string message){
 char answer(){
     char in;
     std::cin >> in;
+    if (in == 'q') {
+        extern Game currentGame;
+        currentGame.endGame();
+    }
     return in;
 }
 

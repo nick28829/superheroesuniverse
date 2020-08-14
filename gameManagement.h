@@ -10,9 +10,12 @@ class Game{
     public:
         void saveGame();
         int play();
+        void endGame();
 };
 
 void showGames();
+
+
 
 Game getGame(int gameNumber);
 
