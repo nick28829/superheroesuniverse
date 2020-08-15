@@ -6,15 +6,22 @@
 - color: grey
 - eyes: red
 
-*1 char Name: What's your name? :
-input -> $gamerName
-char Name: Hallo $gamerName. :
-goto *2
+*1 
+-> char Name: What's your name? :
+-> input = $gamerName
+-> char Name: Hallo $gamerName. :
+-> goto *2
 
-*2 char Name: Wo willst du hin? :
-choice
-1. Grönland -> goto *3
-2. Belgien -> goto *3
+*2 
+-> char Name: Wo willst du hin? :
+-> choice
+1. Grönland 
+    -> goto *3
+2. Belgien 
+    -> write $gamerName: lol :
+    -> goto *3
 
-*3 -> endlevel(success, 1)
+*3 
+-> out: Spiel verlassen :
+-> endlevel(success, 1)
 // comment
