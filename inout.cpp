@@ -38,3 +38,7 @@ int intInput(){
     std::cin >> i;
     return i;
 }
+
+void error(std::string message){
+    std::cerr << message << std::endl; 
+}

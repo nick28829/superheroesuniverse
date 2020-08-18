@@ -7,6 +7,7 @@ void basicOut(std::string message);
 char answer();
 std::string input();
 int intInput();
+void error(std::string message);
 
 
 
