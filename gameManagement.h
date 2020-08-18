@@ -25,7 +25,7 @@ class Game{
 
 class FinishedLevels{
     public:
-        bool kacke;
+        bool level1;
 };
 
 void showGames();

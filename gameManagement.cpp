@@ -10,7 +10,7 @@ Game::Game(){
 }
 
 FinishedLevels::FinishedLevels(){
-    this->kacke = false;
+    this->level1 = false;
 }
 
 // functions outside the classes
