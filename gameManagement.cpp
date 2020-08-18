@@ -5,12 +5,12 @@
 
 // constructors
 Game::Game(){
-    LevelState completedLevels {};
+    this->completedLevels;
     this->gamer = this->editCharakter();
 }
 
-LevelState::LevelState(){
-    bool level1 = false;
+FinishedLevels::FinishedLevels(){
+    this->kacke = false;
 }
 
 // functions outside the classes
